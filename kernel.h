@@ -2,6 +2,10 @@
 
 #include "common.h"
 
+// The base virtual address of an application image. This needs to match the
+// starting address defined in `user.ld`.
+#define USER_BASE 0x1000000
+
 #define SATP_SV32 (1u << 31)
 #define PAGE_V    (1 << 0)   // "Valid" bit (entry is enabled)
 #define PAGE_R    (1 << 1)   // Readable
