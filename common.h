@@ -2,6 +2,11 @@
 
 #define PAGE_SIZE 4096
 
+// System call
+#define SYS_PUTCHAR 1
+#define SYS_GETCHAR 2
+#define SYS_EXIT    3
+
 typedef int bool;
 typedef unsigned char uint8_t;
 typedef unsigned short uint16_t;
